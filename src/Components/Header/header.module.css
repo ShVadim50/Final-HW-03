@@ -1,27 +1,42 @@
-.imgPlane{
+/* Стили для изображения */
+.imgPlane {
   max-height: 100px;
   margin-right: 24px;
 }
 
-  h1 {
-    display: none;
-    
-  }
-  .header{
-    align-items: center;
-    height: 185px;
-    color: var(--purple);
-    height: 92px;
-  }
-  
+
+/* Стили для заголовка */
+h1 {
+  display: none;
+}
+
+/* Основные стили для header */
+.header {
+  display: flex;
+  align-items: center;
+  height: 92px;
+  color: var(--purple);
+}
+
+/* Медиазапросы для экранов шире 768px */
 @media screen and (min-width: 768px) {
-  .header{
-    display: flex;
+  .header {
     flex-direction: row;
     justify-content: start;
-    max-height: 185px;
+    height: 185px;
   }
+  
   h1 {
     display: block;
   }
 }
+.headerContent {
+  display: flex;
+  align-items: center;
+ }
+ 
+ .title {
+  margin: 0;
+  font-size: 1.5rem;
+ }
+ 

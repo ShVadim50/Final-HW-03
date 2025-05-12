@@ -1,81 +1,77 @@
-.wrapper{
+/* Общие стили обёртки */
+.wrapper {
   margin: 0 auto;
-  /*padding: 0 16px;*/
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.content {
-  /*/display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto;*/
+ }
+ 
+ /* Стили основного контента */
+ .content {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 100%;
   margin-top: 16px;
-     
-}
-@media (min-width: 768px) {
+ }
+ 
+ /* Медиа-запрос для планшетов и выше */
+ @media (min-width: 768px) {
   .wrapper {
-    max-width: 1048px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    }
+  max-width: 1048px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  }
+ 
   .content {
-    /*display: grid;
-    grid-template-columns: minmax(272px, auto) minmax(400px, 727px);
-    grid-template-rows: auto auto auto;*/
-    display: flex;
-    flex-direction: row;
-   justify-content: space-between;
-    width: 100%;
-    margin-top: 16px;
-       
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 16px;
   }
-
-  }
-
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
+ }
+ 
+ /* Стили для лого (удалены закомментированные части) */
+ .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
-}
-.logo:hover {
+ }
+ 
+ .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
+ }
+ 
+ .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
+ }
+ 
+ /* Анимация для лого */
+ @keyframes logo-spin {
   from {
-    transform: rotate(0deg);
+  transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+  transform: rotate(360deg);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
+ }
+ 
+ @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  animation: logo-spin infinite 20s linear;
   }
-}
-
-.card {
+ }
+ 
+ /* Стили для карточек */
+ .card {
   padding: 2em;
-}
-
-.read-the-docs {
+ }
+ 
+ /* Стили для текста "Read the Docs" */
+ .read-the-docs {
   color: #888;
-} */
+ }
+ 
